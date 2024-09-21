@@ -1,0 +1,39 @@
+#LIST COMPREHENSION TECHNIQUES
+#in 
+numbers = [1, 2, 3, 4]
+doubled = [number * 2 for number in numbers]
+print(doubled)
+
+# direct 
+digits = [digit * 10 for digit in [1, 2, 3, 4, 5]]
+print(digits)
+
+# range and if
+evenNumber = [i for i in range(11) if i % 2 == 0]
+print(evenNumber)
+
+#matric
+matrix = [[j for j in range(3)] for i in range(3)]
+
+print(matrix)
+
+#append using loop
+list = []
+input = 'eric'
+for character in input: 
+    list.append(character)
+print(list)
+
+#very simple using list comprehentions
+list2 = [character for character in 'Innocent']
+print(list2)
+
+#LAMBDA(shorthand functions) and list comprehensions
+#using list comprehention to get 5 multiples of 10
+mults = [i* 10 for i in range(1, 6)]
+print(mults)
+#now we use lambda: obiviously it is longer and complex showing how important is list comprehension
+#numbers = list(map(lambda i: i*10, [i for i in range(1, 6)])) 
+#print(numbers) 
+
+
